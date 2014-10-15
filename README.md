@@ -13,14 +13,16 @@ Note, that this project originated, when I was playing with GSM-based real GPS l
     - [download](https://github.com/trejder/slp-server/archive/master.zip) `master` branch as `.zip` file.
 2. Update `imei.list` to match your mobile devices (see above notice).
 3. Create `config.inc` file (added to `.gitignore` by default) and fill it with DB data:
+4. 
         <?php 
             $dbhost = 'localhost';
             $dbname = 'slp_server';
             $dbuser = 'slp_server';
             $dbpass = 'aMIGHTYp@ssword&';
         ?>
-4. Upload modified code to sever, capable of running both PHP and MySQL.
-5. Create database structure, using `schema.sql` file and enjoy server running.
+
+5. Upload modified code to sever, capable of running both PHP and MySQL.
+6. Create database structure, using `schema.sql` file, and enjoy server running.
 
 Build [client for this project](https://github.com/trejder/slp-client) and install it on at least one mobile device.
 
@@ -34,7 +36,7 @@ Since server is written in pure PHP and uses Javascript only for stats calculati
 
 Upon finishing last touches (see [Issues](https://github.com/trejder/slp-server/issues) for details), this project will most likely be abandoned.
 
-It lacks some certain functionality and has some small or bigger bugs:
+It lacks some certain functionality and has some smaller or bigger bugs:
 
 1. There is completely no support for user credentials / logging in. [Client](https://github.com/trejder/slp-client), once started, throws all the location data directly to server, which distinguishes clients by analysing UUID only.
 
