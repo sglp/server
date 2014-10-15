@@ -13,7 +13,7 @@ Note, that this project originated, when I was playing with GSM-based real GPS l
     - [download](https://github.com/trejder/slp-server/archive/master.zip) `master` branch as `.zip` file.
 2. Update `imei.list` to match your mobile devices (see above notice).
 3. Create `config.inc` file (added to `.gitignore` by default) and fill it with DB data:
-4. 
+ 
         <?php 
             $dbhost = 'localhost';
             $dbname = 'slp_server';
@@ -21,8 +21,8 @@ Note, that this project originated, when I was playing with GSM-based real GPS l
             $dbpass = 'aMIGHTYp@ssword&';
         ?>
 
-5. Upload modified code to sever, capable of running both PHP and MySQL.
-6. Create database structure, using `schema.sql` file, and enjoy server running.
+4. Upload modified code to sever, capable of running both PHP and MySQL.
+5. Create database structure, using `schema.sql` file, and enjoy server running.
 
 Build [client for this project](https://github.com/trejder/slp-client) and install it on at least one mobile device.
 
