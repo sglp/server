@@ -1,0 +1,29 @@
+<h2>Informacje</h2>
+
+<p>W chwili obecnej dane lokalizacyjne pochodzą wyłącznie z aplikacji mobilnej -- brak danych z lokalizatorów GPS. Powoduje to, że niektóre wyniki mogą być błędne, rozstrzelone lub nie pasujące do reszty.</p>
+
+<h2>Wsparcie testów</h2>
+
+<p>Aby wesprzeć testy śledź.to, pobierz i zainstaluj na swoim urządzeniu mobilnym aplikację lokalizacyjną. Przesyła ona lokalizację GPS w sposób całkowicie anonimowy. Poza danymi geolokalizacyjnymi, UUID urządzenia, stanem baterii i żyroskopu, <strong>nie są przesyłane żadne prywatne dane użytkownika</strong>.</p>
+
+<p>Aplikacja mobilna w obecnej wersji jest dostępna tylko dla systemu Android (<a href="view/sledz.to.apk">sledz.to.apk</a>). Wersje dla iOS i innych systemów mobilnych powinny zostać udostępnione <em>wkrótce</em>.</p>
+
+<p>W fazie beta (obecnie) aplikacja mobilna nie jest dostępna w oficjalnych sklepach aplikacji (np. w Google Play dla Android, czy App Market dla iOS). Konieczna jest jej ręczna instalacja. Aby było to możliwe, należy w urządzeniu mobilnym uaktywnić opcję <em>instalacji aplikacji z nieznanych źródeł</em>. Pobrany plik należy skopiować na smartfon lub tablet i uruchomić go stamtąd lub otworzyć <a href="view/sledz.to.apk">odnośnik do pliku instalacyjnego</a> bezpośrednio na urządzeniu mobilnym.</p>
+
+<h2>Funkcja wyboru poszczególnych tras i inne uwagi</h2>
+
+<p>Projekt ten jest (na razie) całkowicie niekomercyjny, hobbystyczny, realizowany wyłącznie w wolnym czasie. Rok temu został zgłoszony do konkursu aniołów biznesu i z tego powodu na szybko, "na kolanie" kończono w sierpniu 2012 r. pewne funkcje. Popełniono przy tej okazji wiele głupich błędów, które teraz pokutują. Ich poprawa nie jest możliwa, bez przepisania całości od nowa, a na to brakuje czasu i wątpliwe, by czas na to znalazł się jeszcze w 2013 roku.</p>
+
+<p>Jednym z najpoważniejszych braków jest działająca kulawo funkcja wyboru konkretnej trasy.</p>
+
+<p>Działa to poprawnie, ale może wprowadzać w błąd, ze względu na sposób funkcjonowania API Google Maps oraz samej strony WWW projektu. Proszę zerknąć na pasek stanu na dole strony lub na zakładkę "Dane", by zobaczyć różnice, przy wyborze tras. Tylko kreślenie mapy jest kulawe.</p>
+
+<p>Na ten moment nie da się wyświetlić jednej konkretnej trasy, a ukryć pozostałych na mapie. Możliwe jest jedynie ustawienie w Google Maps powiększenia i punktu centralnego mapy tak, aby wyświetlić wszystkie punkty wybranej trasy (lub tylko ostatnie punkty wybranej trasy lub wszystkie trasy). Jeśli jednak "w okolicy" znajdą się na mapie inne trasy, to ich część lub całość też będzie wyświetlana.</p>
+
+<p>Jeżeli trasy są do siebie zbliżone, to wybór poszczególnych z nich wyświetla prawidłowe dane w pasku statusu oraz na zakładce "Dane", ale mapa pozostaje niezmieniona. Oto przykład: <a href="index.php?db=app&imei=58e74b3350490ef6&date=1377208800">wszystkie trasy</a>, <a href="index.php?db=app&imei=58e74b3350490ef6&date=1377208800&track=1&zoom=all">trasa nr 1</a>, <a href="index.php?db=app&imei=58e74b3350490ef6&date=1377208800&track=2&zoom=all">trasa nr 2</a>.</p>
+
+<p>Jeśli jednak trasy różnią się zauważalnie, to wybór poszczególnych z nich zmienia również mapę. Oto przykład: <a href="index.php?db=app&imei=f8adb2eb892532e3&zoom=all">wszystkie trasy</a>, <a href="index.php?db=app&imei=f8adb2eb892532e3&date=1377381600&track=1&zoom=all">trasa nr 1</a>, <a href="index.php?db=app&imei=f8adb2eb892532e3&date=1377381600&track=2&zoom=all">trasa nr 2</a>.</p>
+
+<p>Jak już wspomniałem, marne są szanse, by to zostało poprawione kiedykolwiek. Nawet, gdy ponownie ruszą prace nad projektem, cała strona WWW zostanie zbudowana od nowa, a wybór tras będzie w wersji 3.0 wyglądał zupełnie inaczej.</p>
+
+<p>&nbsp;</p>

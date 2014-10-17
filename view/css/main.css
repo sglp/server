@@ -1,0 +1,117 @@
+body {
+	/*font: 62.5% Arial, Helvetica, sans-serif;*/
+	font-family: Arial, Helvetica, sans-serif;
+	color: #597347;
+	margin: 0;
+	padding: 0;
+	background: #beffbf;
+}
+
+h1, h2 {
+	color: #87ac6d;
+	margin: 20px 0 10px;
+}
+
+p {
+	margin: 1% 0;
+	padding: 0;
+}
+
+#header-wrap {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+    z-index: 10;
+}
+
+#header-container {
+	min-height: 54px;
+    margin-bottom: 14px;
+	background: url(header-bg.png) repeat-x left bottom;
+}
+
+#header {
+    color: #beffbf;
+	position: relative;
+    padding: 6px 7px;
+    font-size: 18px
+}
+
+#header a {
+    font-size: 18px;
+}
+
+#header #top-menu a
+{
+    width: 68px;
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+#header input, #header select, #header button {font-size: 18px}
+
+#container {
+	width: 100%;
+	margin: 0 auto;
+	font-size: 1.4em;
+	overflow: auto;
+	padding: 50px 0 40px;
+}
+
+#stats-content {
+    padding: 0 1%;
+    font-size: 90%;
+}
+
+#info-content {
+	width: 76%;
+	float: left;
+    font-size: 90%;
+    padding: 0 0 0 1%;
+}
+
+#info-sidebar {
+	width: 21%;
+	float: right;
+    font-size: 90%;
+    margin-right: 1%;
+}
+
+#footer-wrap {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+    z-index: 10;
+}
+
+#footer-container {
+	height: 40px;
+    padding-top: 7px;
+	background: url(footer-bg.png) repeat-x left bottom;
+}
+
+#footer {
+    color: #beffbf;
+	position: relative;
+    padding: 13px 7px 0px 7px;
+    font-size: 18px
+}
+
+.mcd
+{
+    top: 0;
+    z-index: 1;
+    position: absolute;
+}
+
+#message
+{
+    padding-top: 52px;
+    padding-left: 7px;
+}
+
+.actual-data {color: red !important;}
+
+li a {color: inherit;}

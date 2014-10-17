@@ -1,0 +1,10 @@
+2.4#31.08.2013#Pełne statystyki, zakładka &bdquo;Dane&rdquo;.
+2.3#23.08.2013#Funkcja wyboru poszczególnych tras.
+2.2#20.08.2013#Nowy wygląd strony WWW.
+2.1#13.08.2013#Funkcja "Pokaż" (zawężanie liczby punktów).
+2.0#10.08.2013#Dostosowanie strony do nowego klienta mobilnego.
+1.0#21.12.2012#Wyświetlanie nazw zamiast UUID i auto-odświeżanie.
+0.8#29.09.2012#Kreślenie tras na mapie Google Maps.
+0.5#27.09.2012#Filtrowanie według daty oraz UUID.
+0.2#12.09.2012#Podgląd pojedynczych wyników w Google Maps.
+0.1#05.09.2012#Pierwsza wersja aplikacji
