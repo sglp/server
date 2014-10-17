@@ -7,9 +7,11 @@ This is a server for my Simple Location Project, written in pure PHP and using M
 ## Usage
 
 1. Get the newest version of the source code:
+ 
     - clone this repository locally,
     - [download](https://github.com/trejder/slp-server/archive/master.zip) `master` branch as `.zip` file.
-2. Create `imei.list` and fill it with data matching your mobile devices (separate with `#`):
+
+2. Create `imei.list` file and fill it with data matching your mobile devices (separate with `#`):
 
         465a3eb892425574#Some Mobile's UUID
         3D0AD03B-8B46-431A-BEF5-FF01B96BA990#Ripple Emulator
