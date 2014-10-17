@@ -4,14 +4,12 @@
 
 This is a server for my Simple Location Project, written in pure PHP and using MySQL database.
 
-Note, that this project originated, when I was playing with GSM-based real GPS locators. I finally moved toward mobile devices (project's [client](https://github.com/trejder/slp-client) is written in PhoneGap, so can be compiled and installed to a various number of platforms, including Android, iOS and Windows), but core server code remained unchanged. That's why you'll find traces of code or file names referring _IMEI_ number. You may safely ignore this. At this point, both client and server are using mobile device's _UUID_ **only**, even if it is still named _IMEI_ or something like that.
-
 ## Usage
 
 1. Get the newest version of the source code:
     - clone this repository locally,
     - [download](https://github.com/trejder/slp-server/archive/master.zip) `master` branch as `.zip` file.
-2. Update `imei.list` to match your mobile devices (see above notice).
+2. Update `imei.list` to match your mobile devices (see below).
 3. Create `config.inc` file (added to `.gitignore` by default) and fill it with DB data:
  
         <?php 
@@ -25,6 +23,12 @@ Note, that this project originated, when I was playing with GSM-based real GPS l
 5. Create database structure, using `schema.sql` file, and enjoy server running.
 
 Build [client for this project](https://github.com/trejder/slp-client) and install it on at least one mobile device.
+
+## Aditional info
+
+Note, that this project originated, when I was playing with GSM-based real GPS locators. I finally moved toward mobile devices (project's [client](https://github.com/trejder/slp-client) is written in PhoneGap, so can be compiled and installed to a various number of platforms, including Android, iOS and Windows), but core server code remained unchanged. That's why you'll find traces of code or file names referring _IMEI_ number. You may safely ignore this. At this point, both client and server are using mobile device's _UUID_ **only**, even if it is still named _IMEI_ or something like that.
+
+I have found out, that _Ripple Emulator_ uses `3D0AD03B-8B46-431A-BEF5-FF01B96BA990` as _UUID_. Though, I'm not sure, if this is _general_ setting or mine / computer specific. Anyway, I'm using following SQL query: `DELETE FROM 'geo' WHERE 'imei' LIKE '%3D0AD03B-8B46-43%';` to purge database out of entries reported by Ripple Emulator during local tests of [projects' client](https://github.com/trejder/slp-client).
 
 ## Tests
 
