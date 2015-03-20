@@ -15,8 +15,10 @@ This is a server for my Simple Location Project, written in pure PHP and using M
 
         465a3eb892425574#Some Mobile's UUID
         3D0AD03B-8B46-431A-BEF5-FF01B96BA990#Ripple Emulator
+        
+3. Notice, that file name `imei.list` is inherited from a dully past of this project and is very confusing. You should insert **mobile devices UUIDs** into this file, not actual IMEI addresses. This project has nothing to do with IMEIs, [mobile client for it](https://github.com/slproject/client) isn't able to read IMEI of the device and **will always push UUID** to this server.
 
-3. Create `config.inc` file (added to `.gitignore` by default) and fill it with DB data:
+4. Create `config.inc` file (added to `.gitignore` by default) and fill it with DB data:
  
         <?php 
             $dbhost = 'localhost';
@@ -25,8 +27,9 @@ This is a server for my Simple Location Project, written in pure PHP and using M
             $dbpass = 'aMIGHTYp@ssword&';
         ?>
 
-4. Upload modified code to sever, capable of running both PHP and MySQL.
-5. Create database structure, using `schema.sql` file, and enjoy server running.
+5. Upload modified code to sever, capable of running both PHP and MySQL.
+
+6. Create database structure, using `schema.sql` file, and enjoy server running.
 
 Build [client for this project](https://github.com/slproject/client) and install it on at least one mobile device.
 
